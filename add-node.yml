@@ -1,0 +1,5 @@
+---
+- name: Add LXC node
+  hosts: lxc-hosts
+  roles:
+    - lxc-node

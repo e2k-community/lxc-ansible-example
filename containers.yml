@@ -1,0 +1,10 @@
+---
+- name: Deploy containers on lxc hosts
+  hosts: lxc-hosts
+  vars:
+    LXC_CONTAINER_NAME: cnt-ans-test
+    LXC_CONTAINER_TEMPLATE: tar
+    LXC_CONTAINER_TEMPLATE_OPTS: "--imgtar /opt/templates/osl.tar.gz"
+
+  roles:
+    - lxc-container
