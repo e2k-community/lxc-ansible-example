@@ -59,6 +59,7 @@ Mandatory args:
   -n,--name         container name, used to as an identifier for that container from now on
 Optional args:
   -p,--path         path to where the container rootfs will be created, defaults to ${default_path}/rootfs. The container config will go under ${default_path} in that case
+  -i,--imgtar       path to rootfs tar.gz archive
   -h,--help         print this help
 EOF
     return 0
